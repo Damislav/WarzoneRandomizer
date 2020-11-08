@@ -85,9 +85,9 @@ function shuffleNodes() {
 }
 button.onclick = shuffleNodes;
 
-$(document).ready(function () {
-  $("#myUL > li:eq(0)").appendTo("#team-red");
-});
+// $(document).ready(function () {
+//   $("#myUL > li:eq(0)").appendTo("#team-red");
+// });
 
 $("#target").click(function () {
   alert("Handler for .click() called.");
