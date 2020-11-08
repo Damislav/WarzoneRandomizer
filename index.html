@@ -23,14 +23,21 @@
     <div id="myDIV" class="header">
       <h2>COD RANDOMIZER</h2>
       <input type="text" id="myInput" placeholder="Title..." />
-      <span onclick="newElement()" class="addBtn">Dodaj</span>
+      <div class="button-container">
+        <button
+          onclick="newElement()"
+          class="randomTeam btn waves-effect waves-yellow"
+        >
+          DODAJ
+        </button>
+      </div>
       <div class="button-container">
         <button
           onclick="randomize(), shuffleNodes()"
           id="shuffle"
           class="randomTeam btn waves-effect waves-yellow"
         >
-          Shuffle baby
+         MEŠAJ
         </button>
       </div>
     </div>
@@ -56,7 +63,6 @@
       <div class="teams-container">
         <a
           id="team-blue-btn"
-          id="move_right"
           class="btn-floating btn-large waves-effect waves-light red"
           ><i class="material-icons">add</i></a
         >

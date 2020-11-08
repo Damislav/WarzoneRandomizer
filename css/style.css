@@ -23,7 +23,7 @@ ul li {
   padding: 12px 8px 12px 40px;
   background: #eee;
   font-size: 18px;
-  transition: 0.2s;
+  transition: 0.5s;
 
   /* make the list items unselectable */
   -webkit-user-select: none;
@@ -62,6 +62,9 @@ ul li.checked::before {
   height: 15px;
   width: 7px;
 }
+#team-red ul li {
+  background-color: red;
+}
 
 /* Style the close button */
 .close {
@@ -96,10 +99,10 @@ input {
   margin: 0;
   border: none;
   border-radius: 0;
-  width: 75%;
+  width: 55%;
   padding: 10px;
-  float: left;
-  font-size: 2rem;
+
+  font-size: 2rem !important;
 }
 
 /* Style the "Add" button */
@@ -134,4 +137,17 @@ input {
   padding: 1rem;
   margin: 0 auto;
   display: inline-flex;
+}
+
+#team-red li {
+  background: rgb(151, 41, 41);
+  color: white;
+
+  margin: 0.5rem;
+}
+
+#team-blue li {
+  background: rgb(63, 80, 156);
+  color: white;
+  margin: 0.5rem;
 }

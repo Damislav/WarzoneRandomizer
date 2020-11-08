@@ -85,8 +85,6 @@ function shuffleNodes() {
 }
 button.onclick = shuffleNodes;
 
-$(document).ready(function () {});
-
 $("#team-red-btn").click(function () {
   $("#shuffle").click();
   $("#myUL > li:eq(0)").appendTo("#team-red");
@@ -95,9 +93,3 @@ $("#team-blue-btn").click(function () {
   $("#shuffle").click();
   $("#myUL > li:eq(0)").appendTo("#team-blue");
 });
-// let teamRed = document.getElementById("team-red");
-// let teamBlue = document.getElementById("team-red");
-
-// teamRed = myUl.shift();
-
-// console.log(teamRed);
