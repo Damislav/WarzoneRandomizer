@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+      <h2>Cod randomizer</h2>
+      <input type="text" id="myInput" placeholder="Title..." />
+      <span onclick="newElement()" class="addBtn">Dodaj</span>
+      <button
+        onclick="randomize(), shuffleNodes()"
+        id="shuffle"
+        class="randomTeam btn waves-effect waves-yellow"
+      >
+        Shuffle baby
+      </button>
+    </div>
+
+    <ul id="myUL" class="selected">
+      <li>Damislavov</li>
+      <li>Pavleyeah</li>
+      <li>Harvoyeah</li>
+      <li>Kikieayh</li>
+      <li>Vexyeah</li>
+    </ul>
+
+    <div class="flex-container">
+      <div class="teams-container">
+        <a class="btn-floating btn-large waves-effect waves-light red"
+          ><i class="material-icons">add</i></a
+        >
+        <ul id="team-red"></ul>
+      </div>
+      <div class="teams-container">
+        <a
+          id="move_right"
+          class="btn-floating btn-large waves-effect waves-light red"
+          ><i class="material-icons">add</i></a
+        >
+        <ul id="team-blue"></ul>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
