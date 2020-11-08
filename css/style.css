@@ -2,6 +2,13 @@
 */ * {
   box-sizing: border-box;
 }
+body {
+  background: url("https://wallpapercave.com/wp/wp5857261.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 
 /* Remove margins and padding from the list */
 ul {
@@ -71,7 +78,7 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-  background-color: #f44336;
+  /* background: url("https://images8.alphacoders.com/106/thumb-1920-1068955.jpg"); */
   padding: 30px 40px;
   color: white;
   text-align: center;
@@ -92,7 +99,7 @@ input {
   width: 75%;
   padding: 10px;
   float: left;
-  font-size: 16px;
+  font-size: 2rem;
 }
 
 /* Style the "Add" button */
@@ -120,5 +127,11 @@ input {
   justify-content: space-evenly;
 }
 .teams-container {
-  width: 45%;
+  width: 20%;
+}
+
+.button-container {
+  padding: 1rem;
+  margin: 0 auto;
+  display: inline-flex;
 }

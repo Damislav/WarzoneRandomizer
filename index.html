@@ -21,36 +21,41 @@
   </head>
   <body>
     <div id="myDIV" class="header">
-      <h2>Cod randomizer</h2>
+      <h2>COD RANDOMIZER</h2>
       <input type="text" id="myInput" placeholder="Title..." />
       <span onclick="newElement()" class="addBtn">Dodaj</span>
-      <button
-        onclick="randomize(), shuffleNodes()"
-        id="shuffle"
-        class="randomTeam btn waves-effect waves-yellow"
-      >
-        Shuffle baby
-      </button>
+      <div class="button-container">
+        <button
+          onclick="randomize(), shuffleNodes()"
+          id="shuffle"
+          class="randomTeam btn waves-effect waves-yellow"
+        >
+          Shuffle baby
+        </button>
+      </div>
     </div>
 
     <ul id="myUL" class="selected">
       <li>Damislavov</li>
       <li>Pavleyeah</li>
       <li>Harvoyeah</li>
-      <br />
       <li>Kikieayh</li>
       <li>Vexyeah</li>
+      <li>Bodrayeah</li>
     </ul>
 
     <div class="flex-container">
       <div class="teams-container">
-        <a class="btn-floating btn-large waves-effect waves-light red"
+        <a
+          id="team-red-btn"
+          class="btn-floating btn-large waves-effect waves-light red"
           ><i class="material-icons">add</i></a
         >
         <ul id="team-red"></ul>
       </div>
       <div class="teams-container">
         <a
+          id="team-blue-btn"
           id="move_right"
           class="btn-floating btn-large waves-effect waves-light red"
           ><i class="material-icons">add</i></a

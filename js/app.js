@@ -85,12 +85,15 @@ function shuffleNodes() {
 }
 button.onclick = shuffleNodes;
 
-// $(document).ready(function () {
-//   $("#myUL > li:eq(0)").appendTo("#team-red");
-// });
+$(document).ready(function () {});
 
-$("#target").click(function () {
-  alert("Handler for .click() called.");
+$("#team-red-btn").click(function () {
+  $("#shuffle").click();
+  $("#myUL > li:eq(0)").appendTo("#team-red");
+});
+$("#team-blue-btn").click(function () {
+  $("#shuffle").click();
+  $("#myUL > li:eq(0)").appendTo("#team-blue");
 });
 // let teamRed = document.getElementById("team-red");
 // let teamBlue = document.getElementById("team-red");
