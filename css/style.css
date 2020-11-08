@@ -7,7 +7,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 150vh;
 }
 
 /* Remove margins and padding from the list */
@@ -126,8 +126,9 @@ input {
 .flex-container {
   display: flex;
 
-  margin-top: 4rem;
-  justify-content: space-evenly;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 2rem;
 }
 .teams-container {
   width: 20%;
@@ -150,4 +151,15 @@ input {
   background: rgb(63, 80, 156);
   color: white;
   margin: 0.5rem;
+  text-align: center;
+}
+
+#myUL li div {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myUL img {
+  margin-left: 1rem;
 }
