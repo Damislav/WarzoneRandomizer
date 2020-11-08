@@ -163,3 +163,11 @@ input {
 #myUL img {
   margin-left: 1rem;
 }
+
+@media screen and (max-width: 780px) {
+  .teams-container {
+    display: flex;
+    width: 100%;
+    transition: 1s ease-in-out;
+  }
+}
